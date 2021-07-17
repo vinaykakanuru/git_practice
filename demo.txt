@@ -20,6 +20,11 @@ $ git config --global core.editor "code --wait" --> only if you can able to get 
 You can specify absoulte path for .executable file of your editor but be sure you do not have spaces in between the path
 Eg:- git config --global core.editor "C:\Users\VINAY KUMAR REDDY\AppData\Roaming\Microsoft\Visual Studio Code"
 
+Replace word "pick" with "reword" for which commit message you want to make changes. Save the file and close the editor.
+Then for each "reword" commit, an editor will open make changes to commit message and save the file, close the editor.
+Then apply --force push.
+$ git push --force-with-lease <remote_name> <branch_name>
+
 
 $ git log --> to see all commits
 A commit hash (SHA1 40 character checksum of the commits contents). Because it is generated based on the commit contents it is unique.
