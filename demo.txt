@@ -1,0 +1,46 @@
+$ git clone https://github.com/<username>/<repo_name>.git
+
+$ git status
+
+$ git add [--all]-A --> stages all changes, new files, modifications and deletions
+$ git add . --> stages new files and modifications, without deletions (on the current directory and its subdirectories).
+$ git add -u --> stages modifications and deletions, without new files
+
+$ git commit -m "<commit string>" --> Git commits/Snapshots are always committed new files/changes to the local repository.
+$ git commit --amend -m "New message" --> it changes the commit message to new message, then you need to --force push the changes
+$ git push --force <remote_name> <branch_name>
+A safer alternative is to use:
+$ git push --force-with-lease <remote_name> <branch_name>
+
+To change older commit messages use git rebase tool.
+$ git rebase -i HEAD~n --> last n commits on the current branch in your default text editor
+
+To set vs code as your default editor then use
+$ git config --global core.editor "code --wait" --> only if you can able to get find "code --help" in your cmd for windows
+You can specify absoulte path for .executable file of your editor but be sure you do not have spaces in between the path
+Eg:- git config --global core.editor "C:\Users\VINAY KUMAR REDDY\AppData\Roaming\Microsoft\Visual Studio Code"
+
+
+$ git log --> to see all commits
+A commit hash (SHA1 40 character checksum of the commits contents). Because it is generated based on the commit contents it is unique.
+Commit Author metadata: The name and email address of the author of the commit.
+Commit Date metadata: A date timestamp for the time of the commit
+Commit title/message: The overview of the commit as written in the commit message
+
+$ git remote
+When you clone a repository with git clone , it automatically creates a remote connection called origin 
+pointing back to the cloned repository. This is useful for developers creating a local copy of a central repository, 
+since it provides an easy way to pull upstream changes or publish local commits.
+
+$ git remote add <remote_name> <https url of remote repo> --> adds remote name in local repo
+$ git remote remove <remote_name> --> removed remote name from local repo
+
+## https://www.atlassian.com/git/tutorials/syncing/git-fetch#:~:text=The%20git%20fetch%20command%20downloads,else%20has%20been%20working%20on.&text=You%20can%20consider%20git%20fetch,version%20of%20the%20two%20commands.
+$ git pull vs (fetch + rebase)
+$ git fetch --> The git fetch command downloads commits, files, and refs from a remote repository into your local repo
+it doesn’t force you to actually merge the changes into your repository
+
+$ git rebase --> if we would prefer a clean/linear history free of unnecessary merge commits, you should reach for git rebase instead of git merge when integrating changes from another branch.
+Rebasing can be dangerous! Rewriting history of shared branches is prone to team work breakage. ... 
+Another side effect of rebasing with remote branches is that you need to force push at some point
+
