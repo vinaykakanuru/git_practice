@@ -62,7 +62,6 @@ $ git config help.autocorrect 1 --> it corrects the command and executes the com
 $ git merge <source_branch_name> --> whenever we need to merge any changes from source to destination branch, first checkout to destination branch then apply merge from source branch.
 $ git checkout <destination_branch_name> --> it lands us in to destination branch then we can apply merge from source branch
 $ git checkout -b <branch_name> --> will creates branch and siwtches to the branch if branch do not exist.
-$ git branch <branch_name> --> to create a new branch
 
 $ git reset HEAD <file_name> --> to remove the file from tracking
 $ git rm --cached <file_name> --> to remove the file from tracking
