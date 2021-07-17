@@ -58,3 +58,13 @@ $ git config color.branch true --> to highlight the current branch with color
 
 $ git config help.autocorrect 0 --> it suggests the command if we do spell mistake
 $ git config help.autocorrect 1 --> it corrects the command and executes the command if we do spell mistake
+
+$ git merge <source_branch_name> --> whenever we need to merge any changes from source to destination branch, first checkout to destination branch then apply merge from source branch.
+$ git checkout <destination_branch_name> --> it lands us in to destination branch then we can apply merge from source branch
+$ git checkout -b <branch_name> --> will creates branch and siwtches to the branch if branch do not exist.
+$ git branch <branch_name> --> to create a new branch
+
+$ git reset HEAD <file_name> --> to remove the file from tracking
+$ git rm --cached <file_name> --> to remove the file from tracking
+$ git restore --staged <file_name> --> to remove the file from tracking
+
