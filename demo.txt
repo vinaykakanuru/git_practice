@@ -49,3 +49,12 @@ $ git rebase --> if we would prefer a clean/linear history free of unnecessary m
 Rebasing can be dangerous! Rewriting history of shared branches is prone to team work breakage. ... 
 Another side effect of rebasing with remote branches is that you need to force push at some point
 
+$ git push <remote_name> <branch_name>--> helps us to push locally committed changes to remote repo.
+The -u option automatically sets that upstream for you, linking your repo to a central one. That way, in the future, Git "knows" where you want to push to and where you want to pull from, so you can use git pull or git push without arguments.
+
+
+$ git branch --> shows all the branches available and current branch is highlighted/pointed out with '*'
+$ git config color.branch true --> to highlight the current branch with color
+
+$ git config help.autocorrect 0 --> it suggests the command if we do spell mistake
+$ git config help.autocorrect 1 --> it corrects the command and executes the command if we do spell mistake
