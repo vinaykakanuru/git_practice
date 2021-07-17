@@ -68,3 +68,4 @@ $ git reset HEAD <file_name> --> to remove the file from tracking
 $ git rm --cached <file_name> --> to remove the file from tracking
 $ git restore --staged <file_name> --> to remove the file from tracking
 
+$ git cherry-pick <commit_id from source branch> --> apply this command in destination branch where you need that particular commit reflects in destination branch.
