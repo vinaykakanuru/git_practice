@@ -67,3 +67,4 @@ $ git branch <branch_name> --> to create a new branch
 $ git reset HEAD <file_name> --> to remove the file from tracking
 $ git rm --cached <file_name> --> to remove the file from tracking
 $ git restore --staged <file_name> --> to remove the file from tracking
+
