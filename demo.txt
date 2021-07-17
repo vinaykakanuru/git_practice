@@ -69,3 +69,7 @@ $ git rm --cached <file_name> --> to remove the file from tracking
 $ git restore --staged <file_name> --> to remove the file from tracking
 
 $ git cherry-pick <commit_id from source branch> --> apply this command in destination branch where you need that particular commit reflects in destination branch.
+
+$ git reset <commit_id> --> will clears all the above/latest commits to the given commit_id
+If we made one or more local commits and want to send all changes under single commit to remote then reset to the commit_id 
+from where you want to consolidate all local changes to remote under single commit.
