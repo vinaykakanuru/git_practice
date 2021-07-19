@@ -1,6 +1,9 @@
 # git_practice
+
 only for git CLI practice
 
+• This repository consists of simple and basic **git** commands.
 
-Hello, do practice on CLI commands too.
-made changes from remote repo.
+• Consolidating most useful **git** commands in our daily life.
+
+• Please do ⭐ the repository, if it helped you in anyway.
