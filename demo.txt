@@ -27,6 +27,7 @@ $ git config help.autocorrect 0 --> it suggests the command if we do spell mista
 $ git config help.autocorrect 1 --> it corrects the command and executes the command if we do spell mistake
 $ git config --global user.name "Your Name"
 $ git config --global user.email "youremail@yourdomain.com"
+$ git config --list --> lists all config values
 
 ### Replace word "pick" with "reword" for which commit message you want to make changes. Save the file and close the editor.
 Then for each "reword" commit, an editor will open make changes to commit message and save the file, close the editor.
